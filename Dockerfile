@@ -14,7 +14,7 @@ RUN apk add --no-cache git make bash build-base linux-headers libseccomp-dev && 
     make BUILDTAGS="seccomp noembed" && \
     make static
 
-FROM quay.io/10thmagnitude/aks-vsts-agent:0.1
+FROM quay.io/10thmagnitude/vsts-agent-ubuntu-16.04-standard-docker
 
 COPY --from=runc /go/src/github.com/opencontainers/runc/runc /usr/bin/runc
 COPY --from=runc /go/src/github.com/genuinetools/img/img /usr/bin/img

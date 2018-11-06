@@ -1,0 +1,1 @@
+This is an image derived from a Ubuntu 16.04 VSTS agent with docker and standard build tools installed, and adds runc and img.
